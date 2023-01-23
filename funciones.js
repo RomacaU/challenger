@@ -99,14 +99,14 @@
     function desencriptar(){
 
         var texto=(document.getElementById("textoIn").value); 
-        alert(texto);
-
-
-        var txtLibre=texto.replace("ufat","u");
-        var txtLibre=txtLibre.replace("enter","e");
-        var txtLibre=txtLibre.replace("ai","a");
-        var txtLibre=txtLibre.replace("ober","o");
-        var txtLibre=txtLibre.replace("imes","i");
+        var txtLibre=texto.replaceAll("enter","e");
+      
+        var txtLibre=txtLibre.replaceAll("imes","i");
+        var txtLibre=txtLibre.replaceAll("ai","a");
+        var txtLibre=txtLibre.replaceAll("ober","o")
+        var txtLibre=txtLibre.replaceAll("ufat","u");
+        
+        
        
         document.getElementById("imgDer").style.display="none";
         document.getElementById("texto").style.display="none";
