@@ -12,7 +12,7 @@
         captura=String.fromCharCode(key).toLocaleLowerCase();
         /*alert(captura)*/
 
-        letras="abcdefgijklmnñopqrstuvwxyz";
+        letras="abcdefghijklmnñopqrstuvwxyz";
 
         especiales="8-32-37-38-46-164";
 
